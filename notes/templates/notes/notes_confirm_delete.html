@@ -1,0 +1,20 @@
+{% extends 'notes/base.html' %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-6">
+        <div class="card shadow border-danger">
+            <div class="card-body text-center">
+                <h4 class="text-danger">Delete Note</h4>
+                <p>Are you sure you want to delete <strong>"{{ note.title }}"</strong>?</p>
+
+                <form method="POST">
+                    {% csrf_token %}
+                    <button type="submit" class="btn btn-danger">Yes, Delete</button>
+                    <a href="{% url 'notes_list' %}" class="btn btn-secondary">Cancel</a>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
