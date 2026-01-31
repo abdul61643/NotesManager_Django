@@ -30,3 +30,12 @@ This project is suitable for beginners learning Django CRUD operations and for s
 
 ## 📂 Project Structure
 
+notesproject/
+│
+├── notes/ # Notes CRUD app
+├── printnotes/ # Print functionality app
+├── notesproject/ # Project settings
+├── templates/ # HTML templates
+├── db.sqlite3 # SQLite database
+├── manage.py
+
