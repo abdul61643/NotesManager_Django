@@ -1,0 +1,1 @@
+# NotesManager_Django
